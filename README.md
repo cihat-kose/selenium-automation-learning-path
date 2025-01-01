@@ -1,12 +1,12 @@
-# SeleniumCurrent
+# Selenium Automation Learning Ppath
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
-![GitHub last commit](https://img.shields.io/github/last-commit/ChatGTHB/JavaPatikaProjects?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/cihat-kose/selenium-automation-learning-path?style=for-the-badge)
 
 ## 💡 Introduction
-Welcome to the **SeleniumCurrent** repository! This project is designed to provide current training and tutorials on Selenium, a powerful tool for web automation. This repository includes code samples, exercises, and documentation to help users get started with Selenium and improve their automation skills.
+Welcome to the **selenium-automation-learning-path** repository! This project is designed to provide current training and tutorials on Selenium, a powerful tool for web automation. This repository includes code samples, exercises, and documentation to help users get started with Selenium and improve their automation skills.
 
 ## Table of Contents
 - [💡 Introduction](#💡-introduction)
@@ -25,7 +25,7 @@ Welcome to the **SeleniumCurrent** repository! This project is designed to provi
 ## 📥 Installation
 1. Open IntelliJ IDEA.
 2. Select **File > New > Project from Version Control**.
-3. Enter the repository URL: `https://github.com/ChatGTHB/SeleniumCurrent.git` and click **Clone**.
+3. Enter the repository URL: `https://github.com/cihat-kose/selenium-automation-learning-path.git` and click **Clone**.
 4. Ensure you have JDK installed on your system:
     - Go to **File > Project Structure > Project** and ensure the Project SDK is set to the correct JDK version.
 5. Add the required dependencies using Maven:
@@ -76,7 +76,7 @@ If you encounter any issues:
 If you encounter any issues, please open an issue on the GitHub repository.
 
 ## 👥 Contributors
-- [ChatGTHB](https://github.com/ChatGTHB)
+- [cihat-kose](https://github.com/cihat-kose)
 
 ## 🤝 Contributing
 Contributions are welcome! Please follow these steps:
@@ -89,4 +89,4 @@ Contributions are welcome! Please follow these steps:
 ## 📜 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-For more information, visit the [SeleniumCurrent GitHub repository](https://github.com/ChatGTHB/SeleniumCurrent).
+For more information, visit the [selenium-automation-learning-path GitHub repository](https://github.com/cihat-kose/selenium-automation-learning-path).
