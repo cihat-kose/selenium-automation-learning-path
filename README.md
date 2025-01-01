@@ -3,7 +3,7 @@
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
-![GitHub last commit](https://img.shields.io/github/last-commit/cihat-kose/selenium-automation-learning-path?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/cihat-kose/selenium-automation-learning-path?style=for-the-badge&cacheSeconds=60)
 
 ## 💡 Introduction
 Welcome to the **selenium-automation-learning-path** repository! This project is designed to provide current training and tutorials on Selenium, a powerful tool for web automation. This repository includes code samples, exercises, and documentation to help users get started with Selenium and improve their automation skills.
