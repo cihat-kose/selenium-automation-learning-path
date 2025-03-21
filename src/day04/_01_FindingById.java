@@ -8,9 +8,7 @@ import utility.MyFunction;
 
 public class _01_FindingById {
     public static void main(String[] args) {
-
         /**
-
          Scenario:
          1-  Open the page --> https://form.jotform.com/221934510376353
 
@@ -20,7 +18,6 @@ public class _01_FindingById {
          4-  Find the second textbox, give it a name eg lastNameBox
          5-  Send the text "Said" in the lastNameBox
          */
-
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://form.jotform.com/221934510376353"); // I went to the page
@@ -37,5 +34,5 @@ public class _01_FindingById {
 }
 
 // Pressing ctrl+f in Chrome opens the search box in the inspect section (with the inspect section active).
-// if we type first_name it searches in all words
+// If we type first_name it searches in all words
 // If we type #first_name, it searches in all ID parameters.

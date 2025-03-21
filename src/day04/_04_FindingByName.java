@@ -8,7 +8,6 @@ import utility.MyFunction;
 
 public class _04_FindingByName {
     public static void main(String[] args) {
-
         WebDriver driver = new ChromeDriver();
         driver.get("https://form.jotform.com/221934510376353");
 

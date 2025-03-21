@@ -10,7 +10,6 @@ import java.util.List;
 
 public class _05_FindingByClassName {
     public static void main(String[] args) {
-
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.hepsiburada.com/");
 
