@@ -18,8 +18,8 @@ public class _06_FindElementVeFindElements {
         // WebElement element1=driver.findElement(By.id("faultyLocator"));
         // no such element: Element not found
 
-        List<WebElement> elementler = driver.findElements(By.id("faultyLocator"));
-        System.out.println("elementler.size() = " + elementler.size());
+        List<WebElement> elements = driver.findElements(By.id("faultyLocator"));
+        System.out.println("elements.size() = " + elements.size());
         // findElements locator sends an empty list that does not give an error if it is incorrect
 
         MyFunction.wait(3);
