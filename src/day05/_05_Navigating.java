@@ -7,7 +7,6 @@ import utility.MyFunction;
 
 public class _05_Navigating extends BaseDriver {
     public static void main(String[] args) {
-
         driver.navigate().to("https://testpages.herokuapp.com/styled/index.html");
         System.out.println(driver.getTitle());       // Returns the TITLE you are currently in.
         System.out.println(driver.getCurrentUrl());  // Returns the URL you are currently in.

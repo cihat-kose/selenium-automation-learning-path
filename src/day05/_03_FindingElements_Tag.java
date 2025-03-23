@@ -11,14 +11,20 @@ public class _03_FindingElements_Tag extends BaseDriver {
 
         driver.get("https://www.amazon.com.tr/");
 
-        List<WebElement> linkler = driver.findElements(By.tagName("a"));
+        List<WebElement> links = driver.findElements(By.tagName("a"));
         // Find all elements with -a- tag
 
-        for (WebElement element : linkler) {
+        for (WebElement element : links) {
             if (!element.getText().isEmpty() && element.getAttribute("href") != null) {
                 System.out.println("element.getText() = " + element.getText());
             }
         }
+
+//        for (WebElement link : links) {
+//            if (!link.getText().equals("")) {
+//                System.out.println("link.getText() = " + link.getText());
+//            }
+//        }
 
         waitAndClose();
     }
