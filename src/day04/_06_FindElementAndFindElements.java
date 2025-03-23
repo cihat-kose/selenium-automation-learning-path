@@ -8,7 +8,7 @@ import utility.MyFunction;
 
 import java.util.List;
 
-public class _06_FindElementVeFindElements {
+public class _06_FindElementAndFindElements {
     public static void main(String[] args) {
         // When you examine in the browser, # for ids and class searches. can be put.
 
