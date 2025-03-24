@@ -8,16 +8,20 @@ import utility.MyFunction;
 
 public class _01_CssSelector extends BaseDriver {
 
-    /**
-     * 1- Open https://formsmarts.com/form/yu?mode=h5
-     * 2- Checked the Business.
-     * 3- Click on discover XYZ and select Online Advertising
-     * 4- Choose every day
-     * 5- Choose good
-     * 6- Click using XYZ and choose option 3
-     * Css selector
-     * Put MyFunction.wait(2); between each click vs action
-     */
+/**
+    Task: Fill and interact with elements on https://formsmarts.com/form/yu?mode=h5 using CSS selectors only.
+
+    Objective:
+    Practice selecting and interacting with form elements using CSS selectors.
+
+    Steps:
+    1. Navigate to https://formsmarts.com/form/yu?mode=h5
+    2. Select "Business"
+    3. Click on "How did you discover XYZ?" dropdown and choose "Online Advertising"
+    4. Select "Every Day"
+    5. Select "Good"
+    6. Click on "How long have you been using XYZ?" and select the 3rd option
+*/
 
     @Test
     public void formTest() {
