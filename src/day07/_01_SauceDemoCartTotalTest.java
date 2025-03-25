@@ -52,7 +52,7 @@ public class _01_SauceDemoCartTotalTest extends BaseDriver {
         driver.findElement(By.xpath("//div[text()='Sauce Labs Backpack']")).click();
         MyFunction.wait(1);
 
-        driver.findElement(By.xpath("//*[@id='add-to-cart-sauce-labs-backpack']")).click();
+        driver.findElement(By.xpath("//button[@id='add-to-cart']")).click();
         MyFunction.wait(1);
 
         driver.findElement(By.xpath("//*[@id='back-to-products']")).click();
@@ -62,7 +62,7 @@ public class _01_SauceDemoCartTotalTest extends BaseDriver {
         driver.findElement(By.xpath("//div[text()='Sauce Labs Bolt T-Shirt']")).click();
         MyFunction.wait(1);
 
-        driver.findElement(By.xpath("//*[@id='add-to-cart-sauce-labs-bolt-t-shirt']")).click();
+        driver.findElement(By.xpath("//button[@id='back-to-products']")).click();
         MyFunction.wait(1);
 
         // Step 5: Go to cart
