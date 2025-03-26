@@ -1,6 +1,5 @@
 package day08;
 
-
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,7 +10,7 @@ public class _02_SelectClass extends BaseDriver {
 
     @Test
     public void testSelectClassUsage() {
-        driver.get("https://www.amazon.com/");
+        driver.get("https://www.amazon.com.tr/");
 
         WebElement selectMenu = driver.findElement(By.id("searchDropdownBox"));
 
@@ -20,8 +19,8 @@ public class _02_SelectClass extends BaseDriver {
         // If this element starts with a select tag, you cast it to Selenium's SELECT class and use it like that.
 
         // dropDownMenu.selectByIndex(4);                                         // You can choose this way : with index
-         dropDownMenu.selectByValue("search-alias=electronics-intl-ship");        // You can choose this way : with value
-        // dropDownMenu.selectByVisibleText("Electronics");                       // You can choose this way : with the visible string
+        dropDownMenu.selectByValue("search-alias=computers");             // You can choose this way : with value
+        // dropDownMenu.selectByVisibleText("Bilgisayarlar");                    // You can choose this way : with the visible string
 
         System.out.println("dropDownMenu.getOptions().size() = " + dropDownMenu.getOptions().size());
         // This is how we can see how many options the Select has.
