@@ -1,6 +1,5 @@
 package day09;
 
-
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -12,18 +11,27 @@ import utility.MyFunction;
 public class _05_ActionHoverTest extends BaseDriver {
 
     @Test
-    public void test() {
+    public void testHoverOverMenu() {
+        // Navigate to the website
         driver.get("https://www.hepsiburada.com/");
 
+        // Create an Actions object for performing advanced user interactions
         Actions actions = new Actions(driver);
+
+        // Wait for the page to load completely
         MyFunction.wait(2);
 
-        WebElement element = driver.findElement(By.xpath("//span[text()='Moda']"));
-        Action action = actions.moveToElement(element).build(); // hover over element
-        action.perform(); // enable it.
+        // Locate the "Moda" menu item
+        WebElement modaElement = driver.findElement(By.xpath("//span[text()='Moda']"));
 
-        // new Actions(driver).moveToElement(element).build().perform();
+        // Build the hover action
+        Action hoverAction = actions.moveToElement(modaElement).build();
 
+        // Perform the hover action
+        hoverAction.perform();
+
+        // Close the browser after a short wait
         waitAndClose();
     }
 }
+
