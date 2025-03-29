@@ -1,6 +1,5 @@
 package day09;
 
-
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,23 +10,28 @@ import utility.MyFunction;
 public class _06_ActionDragAndDropTest extends BaseDriver {
 
     @Test
-    public void test() {
+    public void testDragAndDrop() {
+        // Navigate to the drag-and-drop demo page
         driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
 
+        // Create Actions object for performing complex user gestures
         Actions actions = new Actions(driver);
+
+        // Wait for the elements to load
         MyFunction.wait(2);
 
+        // Locate draggable element (Oslo) and droppable target (Norway)
         WebElement oslo = driver.findElement(By.id("box1"));
         WebElement norway = driver.findElement(By.id("box101"));
 
-        // 1st method
+        // Method 1: Using dragAndDrop directly
         actions.dragAndDrop(oslo, norway).build().perform();
-        // take oslo take it to norway drop it
 
-        // 2nd method: 2-stage
-        actions.clickAndHold(oslo).build().perform(); // Take Oslo
-        actions.moveToElement(norway).release().build().perform(); // Take it over Norway and drop it off
+        // Method 2: Two-step approach - click, move and release
+        actions.clickAndHold(oslo).build().perform();               // Click and hold Oslo
+        actions.moveToElement(norway).release().build().perform();  // Move to Norway and release
 
+        // Close the browser
         waitAndClose();
     }
 }
