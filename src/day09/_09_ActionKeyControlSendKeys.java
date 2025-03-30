@@ -1,6 +1,5 @@
 package day09;
 
-
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -27,13 +26,13 @@ public class _09_ActionKeyControlSendKeys extends BaseDriver {
 
         new Actions(driver)
                 .moveToElement(textBox)  // come to the box
-                .click()                 // click
-                .keyDown(Keys.SHIFT)     // press shift
-                .sendKeys("k")           // send letter "k"; due to a shift with a capital K write-in
-                .keyUp(Keys.SHIFT)       // let go of shift
-                .sendKeys("erem")        // "erem" send remaining name
-                .build()                 // prepare the action
-                .perform();              // perform the operation.
+                .click()                       // click
+                .keyDown(Keys.SHIFT)      // press shift
+                .sendKeys("k")          // send letter "k"; due to a shift with a capital K write-in
+                .keyUp(Keys.SHIFT)        // let go of shift
+                .sendKeys("erem")       // "erem" send remaining name
+                .build()                      // prepare the action
+                .perform();                   // perform the operation.
 
         waitAndClose();
     }
