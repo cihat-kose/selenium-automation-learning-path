@@ -9,20 +9,16 @@ import utility.MyFunction;
 public class _03_WaitsIntro extends BaseDriver {
 
     @Test
-    public void Test() throws InterruptedException {
-        driver.get("http://seleniumpractise.blogspot.com/2016/08/how-to-use-explicit-wait-in-selenium.html");
-        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        // He tried to find the element in the locator for as long as the given respite, and when he found it, it came out.
+    public void testWaitWithStaticDelay() {
+        driver.get("https://letcode.in/waits");
 
-        WebElement button = driver.findElement(By.xpath("//button[@onclick='timedText()']"));
+        WebElement button = driver.findElement(By.id("accept"));
         button.click();
 
-        // WebElement message=driver.findElement(By.id("demo"));
-        // Thread.sleep(20000); // 20 seconds // Making unnecessary waiting
+        MyFunction.wait(20); // Only pauses Java code, unaware of the actual web state.
+        // Might be insufficient or too long depending on page speed, causing inefficiency
 
-        WebElement message = driver.findElement(By.xpath("//p[text()='WebDriver']"));
-        System.out.println("message.getText() = " + message.getText());
-
+        driver.switchTo().alert().accept();  // Closes the alert
         waitAndClose();
     }
 }
