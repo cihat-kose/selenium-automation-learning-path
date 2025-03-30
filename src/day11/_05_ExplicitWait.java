@@ -1,6 +1,5 @@
 package day11;
 
-
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,12 +9,15 @@ import utility.BaseDriver;
 
 import java.time.Duration;
 
-
-public class _04_ExplicitWait extends BaseDriver {
+public class _05_ExplicitWait extends BaseDriver {
 
     // ExplicitWait
     @Test
-    public void test() {
+    public void testExplicitWaitForTextVisibility() {
+        // Element exists but situations where I have to wait until it is clickable
+        // Element exists, but it is not in a position to send text into it
+        // Wait for the alert to appear
+        // Wait until the URL is what you expect
         driver.get("http://seleniumpractise.blogspot.com/2016/08/how-to-use-explicit-wait-in-selenium.html");
 
         WebElement button = driver.findElement(By.xpath("//button[@onclick='timedText()']"));
