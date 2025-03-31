@@ -1,6 +1,5 @@
 package day11;
 
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -12,7 +11,7 @@ import utility.MyFunction;
 
 import java.util.List;
 
-public class _07_Question extends BaseDriver {
+public class _08_GoogleSeleniumSearchTest  extends BaseDriver {
 
     /**
      * Scenario:
@@ -23,7 +22,7 @@ public class _07_Question extends BaseDriver {
      */
 
     @Test
-    public void test() {
+    public void testGoogleSearchForSelenium() {
         driver.get("https://www.google.com/");
         MyFunction.wait(2);
 
