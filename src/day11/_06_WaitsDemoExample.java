@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class _05_WaitsDemoExample extends BaseDriver {
+public class _06_WaitsDemoExample extends BaseDriver {
 
     /**
      * Task: Implementing Explicit Wait and Interacting with Elements
@@ -30,7 +30,7 @@ public class _05_WaitsDemoExample extends BaseDriver {
         // Step 1: Navigate to the website
         driver.get("https://www.hyrtutorials.com/p/waits-demo.html");
 
-        List<WebElement> cookiesDecline = driver.findElements(By.xpath("/html/body/div[4]/div[2]/div[1]/div[2]/div[2]/button[2]/p"));
+        List<WebElement> cookiesDecline = driver.findElements(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/button[1]/p"));
         if (!cookiesDecline.isEmpty()) {
             cookiesDecline.get(0).click();
         }
