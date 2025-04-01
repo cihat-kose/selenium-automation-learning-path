@@ -24,9 +24,9 @@ public class _02_NestedIFrameInteractionTest extends BaseDriver {
         driver.get("https://demo.automationtesting.in/Frames.html");
 
         // Handle optional cookie consent
-        List<WebElement> consentButton = driver.findElements(By.xpath("//*[text()='Consent']"));
-        if (!consentButton.isEmpty()) {
-            consentButton.get(0).click();
+        List<WebElement> cookiesDecline = driver.findElements(By.xpath("//*[text()='Do not consent']"));
+        if (!cookiesDecline.isEmpty()) {
+            cookiesDecline.get(0).click();
         }
 
         // Click on "Iframe with in an Iframe"
