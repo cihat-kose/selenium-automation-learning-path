@@ -1,37 +1,55 @@
 package day12;
 
-
+import utility.BaseDriver;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utility.BaseDriver;
+
+import java.util.List;
 
 public class _01_IFrameIntro extends BaseDriver {
 
     @Test
-    public void test() {
-        driver.get("https://chercher.tech/practice/frames");
+    public void testSingleIFrameInteraction() {
+        // 1- Navigate to the website
+        driver.get("https://demo.automationtesting.in/Frames.html");
 
-        long startTime = System.currentTimeMillis();
+        // Step 1.1: Close cookie pop-up if it appears (Optional cookies)
+        List<WebElement> cookiesDecline = driver.findElements(By.xpath("//*[text()='Do not consent']"));
+        if (!cookiesDecline.isEmpty()) {
+            cookiesDecline.get(0).click();
+        }
 
-        //driver.switchTo().frame(0);          // It can be passed by giving indexes: index on the page
-        //driver.switchTo().frame("frame1");   // You can pass by giving id, but it's slow
-        //driver.switchTo().frame("iamframe"); // It can also be passed by giving name, but it's fast
+        // 2- Switch into the iframe
 
-        WebElement frame1 = driver.findElement(By.id("frame1"));
-        driver.switchTo().frame(frame1); // You can also export it as weblement, but it's fast.
-                                         // index>webelement>name>id --> Depends on the selenium version.
+        // Method 1: Switch by index (based on iframe order in the page)
+        // driver.switchTo().frame(0);
 
-        long endTime = System.currentTimeMillis();
-        System.out.println("Duration = " + (endTime - startTime));
+        // Method 2: Switch by name or id attribute
+        driver.switchTo().frame("singleframe");
 
-        WebElement textBox = driver.findElement(By.cssSelector("[id='topic']+input"));
-        textBox.sendKeys("Türkiye");
+        // Method 3: Switch using WebElement
+        // WebElement iframe1 = driver.findElement(By.id("singleframe"));
+        // driver.switchTo().frame(iframe1);
 
-        // If a locator in an iframe will be processed, I need to switch to that iframe first.
-        // driver.switchTo().frame(0);      // switch to relevant room (iframe)
-        // driver.switchTo().parentFrame(); // goes to the previous page, one back
-        driver.switchTo().defaultContent(); // goes directly to the outermost page
+        // Note: In terms of performance, switching by index is the fastest.
+        // But in real projects, switching by WebElement is the most stable and flexible.
+        // Order of performance (generally): index > WebElement > name > id
+
+        // 3- Locate the input box inside the iframe and type text
+        WebElement inputBox = driver.findElement(By.xpath("//input[@type='text']"));
+        inputBox.sendKeys("Hello");
+
+        // At this point, the driver is inside the iframe.
+        // Any locator used now will only search within the iframe content.
+
+        // 4- Exit the iframe and return to the main page
+
+        // Method 1: Go up one level (only works if there's a single iframe level)
+        // driver.switchTo().parentFrame();
+
+        // Method 2: Go back to the top-level document (recommended)
+        driver.switchTo().defaultContent();
 
         waitAndClose();
     }
