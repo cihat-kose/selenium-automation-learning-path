@@ -11,28 +11,36 @@ import java.util.Set;
 
 public class _01_WindowsIntro extends BaseDriver {
 
+    // driver.quit();  // Closes all opened windows
+    // driver.close(); // Closes only the currently active window
+
     @Test
-    public void test() {
-        // Each tab in the browser is called a window in Selenium
+    public void handleMultipleWindowsTest() {
+        // Each tab in the browser is considered a window in Selenium
         driver.get("https://www.selenium.dev/");
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        String mainPageWindowId = driver.getWindowHandle(); // I got the id of my location i.e. home page
+        // Store the window ID of the main page
+        String mainPageWindowId = driver.getWindowHandle();
 
+        // Find all links that open in a new tab (target="_blank")
         List<WebElement> links = driver.findElements(By.cssSelector("a[target='_blank']"));
 
+        // Click each link using JavaScriptExecutor
         for (WebElement link : links) {
-            // link.click();
             js.executeScript("arguments[0].click();", link);
         }
 
-        Set<String> windowsIDs = driver.getWindowHandles(); // Give the ID of all the slabs
-        for (String id : windowsIDs) {
-            System.out.println("id = " + id);
+        // Get the IDs of all open windows/tabs
+        Set<String> windowIDs = driver.getWindowHandles();
+
+        for (String id : windowIDs) {
+            System.out.println("Window ID = " + id);
         }
 
-        driver.switchTo().window(mainPageWindowId); // Switch to the corresponding Window (Tab)
+        // Switch back to the main window
+        driver.switchTo().window(mainPageWindowId);
 
         waitAndClose();
     }
