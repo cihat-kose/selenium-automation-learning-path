@@ -13,6 +13,13 @@ import java.util.List;
  * It includes a safety check to prevent errors if the shadow host element is not found.
  */
 
+import java.util.List;
+
+/**
+ * This test demonstrates how to interact with Shadow DOM in Selenium.
+ * It includes a safety check to prevent errors if the shadow host element is not found.
+ */
+
 public class _01_A_ShadowContent extends BaseDriver {
 
     @Test
