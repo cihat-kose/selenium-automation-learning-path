@@ -10,8 +10,8 @@ import utility.MyFunction;
 import java.util.List;
 
 /**
- * This test demonstrates interaction with a native Shadow DOM element.
- * It uses getShadowRoot() to access the shadow tree and interact with an element inside.
+ * This test demonstrates how to interact with a native Shadow DOM element using Selenium.
+ * It accesses the shadow root via getShadowRoot(), then finds and clicks the "Accept All" button inside the Shadow DOM.
  */
 
 public class _01_A_ShadowContent extends BaseDriver {
@@ -19,22 +19,25 @@ public class _01_A_ShadowContent extends BaseDriver {
     @Test
     public void clickButtonInsideNativeShadowDomTest() {
         driver.get("https://www.akakce.com/");
-        MyFunction.wait(2);
+        MyFunction.wait(2); // Give the shadow content time to load
 
-        // Try to locate the shadow host element
+        // Step 1: Locate the shadow host element (Web Component)
         List<WebElement> shadowHosts = driver.findElements(By.className("efilli-layout-tuttur"));
 
         if (!shadowHosts.isEmpty()) {
-            WebElement shadowWebParent = shadowHosts.get(0);
+            WebElement shadowHost = shadowHosts.get(0);
 
-            // Access the native shadow root from the host element
-            SearchContext shadowContent = shadowWebParent.getShadowRoot();
+            // Step 2: Access the native Shadow Root from the host element
+            SearchContext shadowRoot = shadowHost.getShadowRoot();
 
-            // Locate and click the accept button inside the native shadow DOM
-            WebElement acceptButton = shadowContent.findElement(By.cssSelector(".banner__accept-button"));
+            // Step 3: Locate the "Accept All" button using a clear and stable selector
+            WebElement acceptButton = shadowRoot.findElement(By.cssSelector("div[data-name='kabul et']"));
+
+            // Optional: Print button text for debugging
             System.out.println("acceptButton.getText() = " + acceptButton.getText());
-            acceptButton.click();
 
+            // Step 4: Click the button
+            acceptButton.click();
         } else {
             System.out.println("Shadow host element not found. Shadow interaction skipped.");
         }
