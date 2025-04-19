@@ -2,7 +2,7 @@
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
-![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit-4.13.1-25A162?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/cihat-kose/selenium-automation-learning-path?style=for-the-badge&cacheSeconds=60)
 
 ## 💡 Introduction
