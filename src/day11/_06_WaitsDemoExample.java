@@ -1,11 +1,11 @@
 package day11;
 
-import utility.BaseDriver;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utility.BaseDriver;
 
 import java.time.Duration;
 import java.util.List;
@@ -14,14 +14,14 @@ public class _06_WaitsDemoExample extends BaseDriver {
 
     /**
      * Task: Implementing Explicit Wait and Interacting with Elements
-     *
+     * <p>
      * 1. Navigate to the website: "https://www.hyrtutorials.com/p/waits-demo.html".
      * 2. Click on the first button with the id "btn1". This button will trigger the appearance of a text box.
      * 3. Use Explicit Wait (WebDriverWait) to wait until the text box with the id "txt1" becomes visible.
      * 4. Once the text box appears, enter your first name (e.g., "Ismet") into the text box.
      * 5. Bonus Step for Fast Finishers:
-     *    - Click on the second button to trigger the appearance of another text box.
-     *    - Once it appears, enter your last name in the newly visible text box.
+     * - Click on the second button to trigger the appearance of another text box.
+     * - Once it appears, enter your last name in the newly visible text box.
      * 6. Close the browser once the task is complete.
      */
 

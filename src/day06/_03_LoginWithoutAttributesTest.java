@@ -7,18 +7,18 @@ import org.openqa.selenium.WebElement;
 import utility.BaseDriver;
 
 /**
-    Task: Login to the E-Commerce Page Without Using Any Attributes
-
-    Objective:
-    Practice locating elements using only CSS selectors (no attributes like id, class, name, etc.).
-
-    Steps:
-    1. Navigate to https://qa-practice.netlify.app/auth_ecommerce
-    2. Enter "admin@admin.com" into the email field
-    3. Enter "admin123" into the password field
-    4. Click the Submit button
-    5. Verify that "SHOPPING CART" text is visible on the new page using assertion
-*/
+ * Task: Login to the E-Commerce Page Without Using Any Attributes
+ * <p>
+ * Objective:
+ * Practice locating elements using only CSS selectors (no attributes like id, class, name, etc.).
+ * <p>
+ * Steps:
+ * 1. Navigate to https://qa-practice.netlify.app/auth_ecommerce
+ * 2. Enter "admin@admin.com" into the email field
+ * 3. Enter "admin123" into the password field
+ * 4. Click the Submit button
+ * 5. Verify that "SHOPPING CART" text is visible on the new page using assertion
+ */
 
 public class _03_LoginWithoutAttributesTest extends BaseDriver {
 

@@ -8,12 +8,10 @@ import org.openqa.selenium.interactions.Actions;
 import utility.BaseDriver;
 import utility.MyFunction;
 
-import java.util.List;
-
 public class _02_ActionClickTest extends BaseDriver {
 
     @Test
-    public void actionClickTest () {
+    public void actionClickTest() {
         driver.get("https://demoqa.com/buttons");
 
 //        List<WebElement>consent = driver.findElements(By.xpath("//button[@class='fc-button fc-cta-consent fc-primary-button']//p"));
@@ -42,6 +40,6 @@ public class _02_ActionClickTest extends BaseDriver {
         // the shortest version
         //new Actions(driver).click(clickButton).build().perform(); // for a single action
 
-         waitAndClose();
+        waitAndClose();
     }
 }

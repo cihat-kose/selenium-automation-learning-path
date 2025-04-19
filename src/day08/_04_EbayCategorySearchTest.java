@@ -9,17 +9,17 @@ import utility.BaseDriver;
 import utility.MyFunction;
 
 /**
-    Test Case: Search Baby Category on eBay
-
-    Objective:
-    Verify that selecting the "Baby" category and searching displays correct results.
-
-    Steps:
-    1. Navigate to https://www.ebay.co.uk/
-    2. Select the "Baby" option from the category dropdown.
-    3. Click the search button.
-    4. Validate that "Baby Essentials" is displayed in the result page header.
-*/
+ * Test Case: Search Baby Category on eBay
+ * <p>
+ * Objective:
+ * Verify that selecting the "Baby" category and searching displays correct results.
+ * <p>
+ * Steps:
+ * 1. Navigate to https://www.ebay.co.uk/
+ * 2. Select the "Baby" option from the category dropdown.
+ * 3. Click the search button.
+ * 4. Validate that "Baby Essentials" is displayed in the result page header.
+ */
 
 public class _04_EbayCategorySearchTest extends BaseDriver {
 

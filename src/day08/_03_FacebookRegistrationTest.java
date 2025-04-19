@@ -10,19 +10,19 @@ import utility.MyFunction;
 import java.util.List;
 
 /**
-    Test Case: Facebook Registration Form Automation
-
-    Objective:
-    Automate the registration process on Facebook using Selenium WebDriver.
-
-    Steps:
-    1. Navigate to https://www.facebook.com/
-    2. Click on the "Create New Account" button.
-    3. Enter first name, last name, and email address.
-    4. Select date of birth using the Select class.
-    5. Choose gender.
-    6. Close the browser.
-*/
+ * Test Case: Facebook Registration Form Automation
+ * <p>
+ * Objective:
+ * Automate the registration process on Facebook using Selenium WebDriver.
+ * <p>
+ * Steps:
+ * 1. Navigate to https://www.facebook.com/
+ * 2. Click on the "Create New Account" button.
+ * 3. Enter first name, last name, and email address.
+ * 4. Select date of birth using the Select class.
+ * 5. Choose gender.
+ * 6. Close the browser.
+ */
 
 public class _03_FacebookRegistrationTest extends BaseDriver {
 

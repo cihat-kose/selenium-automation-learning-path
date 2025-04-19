@@ -11,7 +11,7 @@ import utility.MyFunction;
 
 import java.util.List;
 
-public class _08_GoogleSeleniumSearchTest  extends BaseDriver {
+public class _08_GoogleSeleniumSearchTest extends BaseDriver {
 
     /**
      * Scenario:

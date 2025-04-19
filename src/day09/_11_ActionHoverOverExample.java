@@ -12,10 +12,10 @@ import java.util.List;
 
 public class _11_ActionHoverOverExample extends BaseDriver {
 
-   //    Task:
-   //    1) Navigate to https://www.mediamarkt.com.tr/
-   //    2) Hover over "All Categories" -> "Home Appliances" -> "Combi Boilers" and click.
-   //    3) After the click, verify that the word "kombi" is present in the URL.
+    //    Task:
+    //    1) Navigate to https://www.mediamarkt.com.tr/
+    //    2) Hover over "All Categories" -> "Home Appliances" -> "Combi Boilers" and click.
+    //    3) After the click, verify that the word "kombi" is present in the URL.
 
     @Test
     public void test() {

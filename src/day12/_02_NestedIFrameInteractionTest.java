@@ -10,13 +10,13 @@ import java.util.List;
 public class _02_NestedIFrameInteractionTest extends BaseDriver {
 
     /**
-        Scenario:
-        1. Go to https://demo.automationtesting.in/Frames.html
-        2. Click on "Iframe with in an Iframe"
-        3. Type your name in the input box inside the nested iframe
-        4. Print the text of the element containing "iFrame Demo"
-        5. Print the text of the element containing "Nested iFrames"
-        6. Print the page title of the main page
+     * Scenario:
+     * 1. Go to https://demo.automationtesting.in/Frames.html
+     * 2. Click on "Iframe with in an Iframe"
+     * 3. Type your name in the input box inside the nested iframe
+     * 4. Print the text of the element containing "iFrame Demo"
+     * 5. Print the text of the element containing "Nested iFrames"
+     * 6. Print the page title of the main page
      */
 
     @Test

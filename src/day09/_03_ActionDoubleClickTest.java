@@ -8,12 +8,10 @@ import org.openqa.selenium.interactions.Actions;
 import utility.BaseDriver;
 import utility.MyFunction;
 
-import java.util.List;
-
 public class _03_ActionDoubleClickTest extends BaseDriver {
 
     @Test
-    public void actionDoubleClickTest () {
+    public void actionDoubleClickTest() {
         driver.get("https://demoqa.com/buttons");
 
 //        List<WebElement> consent = driver.findElements(By.xpath("//button[@class='fc-button fc-cta-consent fc-primary-button']//p"));

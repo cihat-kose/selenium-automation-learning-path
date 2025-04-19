@@ -7,7 +7,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import utility.BaseDriver;
-import utility.MyFunction;
 
 import java.io.File;
 import java.io.IOException;

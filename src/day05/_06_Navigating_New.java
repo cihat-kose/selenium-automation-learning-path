@@ -29,7 +29,7 @@ public class _06_Navigating_New extends BaseDriver {
 //            System.out.println("Test failed.");
 //        }
 
-        Assert.assertEquals( "The expected page could not be reached.","https://testpages.eviltester.com/styled/alerts/alert-test.html", driver.getCurrentUrl());
+        Assert.assertEquals("The expected page could not be reached.", "https://testpages.eviltester.com/styled/alerts/alert-test.html", driver.getCurrentUrl());
 
         waitAndClose();
     }

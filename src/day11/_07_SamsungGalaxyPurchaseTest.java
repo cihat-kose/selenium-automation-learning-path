@@ -10,17 +10,17 @@ import utility.BaseDriver;
 public class _07_SamsungGalaxyPurchaseTest extends BaseDriver {
 
     /**
-     Scenario:
-     1- Open the site https://www.demoblaze.com/index.html.
-     2- Click on the Samsung galaxy s6 link.
-     3- Add to cart.
-     4- Then click on PRODUCT STORE to return to the main screen.
-     =======================================================================
-     Senaryo:
-     1- https://www.demoblaze.com/index.html siteyi açınız.
-     2- Samsung galaxy s6 linkine tıklayınız.
-     3- Sepete ekleyiniz.
-     4- Daha Sonra PRODUCT STORE yazısına tıklatarak ana ekrana geri dönünüz.
+     * Scenario:
+     * 1- Open the site https://www.demoblaze.com/index.html.
+     * 2- Click on the Samsung galaxy s6 link.
+     * 3- Add to cart.
+     * 4- Then click on PRODUCT STORE to return to the main screen.
+     * =======================================================================
+     * Senaryo:
+     * 1- https://www.demoblaze.com/index.html siteyi açınız.
+     * 2- Samsung galaxy s6 linkine tıklayınız.
+     * 3- Sepete ekleyiniz.
+     * 4- Daha Sonra PRODUCT STORE yazısına tıklatarak ana ekrana geri dönünüz.
      */
 
     @Test

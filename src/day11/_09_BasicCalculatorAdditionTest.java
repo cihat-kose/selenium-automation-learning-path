@@ -15,12 +15,12 @@ import java.time.Duration;
 public class _09_BasicCalculatorAdditionTest extends BaseDriver {
 
     /**
-        Scenario:
-        1- Navigate to https://testsheepnz.github.io/BasicCalculator.html.
-        2- Generate two random numbers up to 100.
-        3- Perform addition on the calculator.
-        4- Verify the results using Assert.
-        5- Repeat the above process 5 times.
+     * Scenario:
+     * 1- Navigate to https://testsheepnz.github.io/BasicCalculator.html.
+     * 2- Generate two random numbers up to 100.
+     * 3- Perform addition on the calculator.
+     * 4- Verify the results using Assert.
+     * 5- Repeat the above process 5 times.
      */
 
     @Test

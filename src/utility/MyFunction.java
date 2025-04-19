@@ -1,4 +1,5 @@
 package utility;
+
 public class MyFunction {
     public static void wait(int sec) {
         try {

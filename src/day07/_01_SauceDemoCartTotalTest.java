@@ -10,24 +10,24 @@ import utility.MyFunction;
 import java.util.List;
 
 /**
-    Task: Verify Cart Item Total Using XPath
-
-    Scenario:
-    1. Go to https://www.saucedemo.com/
-    2. Log in using the credentials:
-       - Username: standard_user
-       - Password: secret_sauce
-    3. Click on "Sauce Labs Backpack" and add it to the cart
-    4. Click "Back to products"
-    5. Click on "Sauce Labs Bolt T-Shirt" and add it to the cart
-    6. Go to the cart
-    7. Click "Checkout"
-    8. Fill in the user information and click "Continue"
-    9. Verify with an assertion that the sum of individual product prices
-       is equal to the displayed "Item total" at the bottom
-
-    Note: All element selectors should be done using XPath only.
-*/
+ * Task: Verify Cart Item Total Using XPath
+ * <p>
+ * Scenario:
+ * 1. Go to https://www.saucedemo.com/
+ * 2. Log in using the credentials:
+ * - Username: standard_user
+ * - Password: secret_sauce
+ * 3. Click on "Sauce Labs Backpack" and add it to the cart
+ * 4. Click "Back to products"
+ * 5. Click on "Sauce Labs Bolt T-Shirt" and add it to the cart
+ * 6. Go to the cart
+ * 7. Click "Checkout"
+ * 8. Fill in the user information and click "Continue"
+ * 9. Verify with an assertion that the sum of individual product prices
+ * is equal to the displayed "Item total" at the bottom
+ * <p>
+ * Note: All element selectors should be done using XPath only.
+ */
 
 public class _01_SauceDemoCartTotalTest extends BaseDriver {
 

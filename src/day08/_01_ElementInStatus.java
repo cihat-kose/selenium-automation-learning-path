@@ -6,7 +6,6 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.BaseDriver;
-import utility.MyFunction;
 
 public class _01_ElementInStatus extends BaseDriver {
 

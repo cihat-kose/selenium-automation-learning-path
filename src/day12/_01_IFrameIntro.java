@@ -1,9 +1,9 @@
 package day12;
 
-import utility.BaseDriver;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import utility.BaseDriver;
 
 import java.util.List;
 

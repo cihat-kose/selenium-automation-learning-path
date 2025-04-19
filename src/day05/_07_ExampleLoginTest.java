@@ -8,13 +8,13 @@ import utility.BaseDriver;
 
 public class _07_ExampleLoginTest extends BaseDriver {
     /**
-    Scenario:
-    1- Open your https://qa-practice.netlify.app/auth_ecommerce page
-    2- Type "admin@admin.com" in the email box
-    3- Print "admin123" in the Password box
-    4- Click on the Submit button
-    5- Verify with Assert that the text "SHOPPING CART" appears on the new page that opens.
-    */
+     * Scenario:
+     * 1- Open your https://qa-practice.netlify.app/auth_ecommerce page
+     * 2- Type "admin@admin.com" in the email box
+     * 3- Print "admin123" in the Password box
+     * 4- Click on the Submit button
+     * 5- Verify with Assert that the text "SHOPPING CART" appears on the new page that opens.
+     */
 
     @Test
     public void loginDisplaysShoppingCart() {

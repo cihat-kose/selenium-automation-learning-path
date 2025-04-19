@@ -8,8 +8,6 @@ import org.openqa.selenium.interactions.Actions;
 import utility.BaseDriver;
 import utility.MyFunction;
 
-import java.util.List;
-
 public class _10_ArrowKeysSelection extends BaseDriver {
 
     @Test

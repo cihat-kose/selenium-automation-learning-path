@@ -3,7 +3,6 @@ package day14;
 import org.junit.Test;
 import org.openqa.selenium.Dimension;
 import utility.BaseDriver;
-import utility.MyFunction;
 
 /**
  * This test demonstrates how to resize the browser window using Selenium.

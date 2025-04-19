@@ -15,9 +15,9 @@ public class _07_ScrollToWebElement extends BaseDriver {
         driver.get("https://www.selenium.dev/selenium/web/scrolling_tests/frame_with_nested_scrolling_frame_out_of_view.html");
         MyFunction.wait(2);
 
-        JavascriptExecutor js=(JavascriptExecutor)driver;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        WebElement iframe= driver.findElement(By.name("nested_scrolling_frame"));
+        WebElement iframe = driver.findElement(By.name("nested_scrolling_frame"));
         js.executeScript("arguments[0].scrollIntoView(true);", iframe); // Scroll to element.
 
         waitAndClose();
