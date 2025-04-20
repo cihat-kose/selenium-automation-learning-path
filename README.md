@@ -57,11 +57,11 @@ documentation to help users get started with Selenium and improve their automati
 
 ## 📦 Dependencies
 
-- Java JDK 11 or newer
-- Selenium WebDriver
-- JUnit (comes with Java, no additional installation needed)
-- Commons IO
-- SLF4J NOP
+- **Java JDK**: 11 or newer (tested on 21.0.6)
+- **Selenium WebDriver**: 4.31.0
+- **JUnit**: 4.13.1 (comes bundled with Java setup in most IDEs)
+- **Commons IO**: 2.11.0
+- **SLF4J NOP**: 1.7.30
 
 ## 🔧 Configuration
 
