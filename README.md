@@ -77,6 +77,11 @@ Selenium for web automation.
 Example test cases are located in the provided test directory. These examples demonstrate how to use Selenium WebDriver
 for various web automation tasks.
 
+> ℹ️ **Note on wait methods:**  
+> In some examples, you might notice the use of static waits (e.g., `MyFunction.wait(5)` or `Thread.sleep()`).  
+> These are used only for demonstration and visual confirmation purposes.  
+> In real-world automation, always prefer **explicit waits**, such as `WebDriverWait`, for proper synchronization and reliability.
+
 ## 🛠️ Troubleshooting
 
 If you encounter any issues:
