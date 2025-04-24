@@ -28,7 +28,7 @@ public class _01_FindingById {
         WebElement surnameBox = driver.findElement(By.id("last_8")); // find element by id
         surnameBox.sendKeys("Said"); // send text to boxes
 
-        MyFunction.wait(5);
+        MyFunction.wait(5); /// For visibility only. Use WebDriverWait in real automation.
         driver.quit();
     }
 }
